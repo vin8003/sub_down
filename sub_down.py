@@ -34,7 +34,7 @@ def get_hash(name):
 
 def download(f_hash, filename):
     try:
-        url = 'http://sandbox.thesubdb.com/?action=download&language=en&hash=' + f_hash
+        url = 'http://api.thesubdb.com/?action=download&language=en&hash=' + f_hash
         req = urllib.Request(url)
         req.add_header('User-Agent', USER_AGENT)
 
